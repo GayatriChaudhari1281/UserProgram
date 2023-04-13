@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Servlet</title>
+</head>
+<body>
+	<h2>Register Me</h2>
+	<form name="frm" method="post" action="../Add">
+		<table>
+			<tr>
+				<td>Email
+				<td><input type="text"
+					pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+					required name="email">
+			</tr>
+			<tr>
+				<td>Password
+				<td><input type="password" name="psw" required>
+			</tr>
+			<tr>
+				<td>Name
+				<td><input type="text" name="nm" required>
+			</tr>
+
+			<tr>
+				<td>Date Of Birth
+				<td><input type="text" name="dob"
+					pattern="\d{4}-\d{1,2}-\d{1,2}" name="date" required>(YYYY-MM-DD)
+				
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit">
+			</tr>
+		</table>
+	</form>
+	<br>
+	<a href="../index.html">Home</a>
+</body>
+</html>

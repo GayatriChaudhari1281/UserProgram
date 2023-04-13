@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<body>
+	<form method="post" action="Login">
+		<table>
+			<tr>
+				<td>User ID
+				<td><input type="text"
+					pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+					required name="email" placeholder="email">
+			</tr>
+			<tr>
+				<td>Password
+				<td><input type="password" placeholder="password" name="pass"
+					required>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Submit">
+			</tr>
+		</table>
+	</form>
+	<br>
+	<a href="HTML/Register.html">Register Me</a>
+	<a href="JSP/ForgetPass.jsp">Forget Password</a>
+
+</body>
+</html>
